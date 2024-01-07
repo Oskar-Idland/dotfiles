@@ -18,8 +18,8 @@ if status is-interactive
     abbr --add cndd 'conda deactivate ; conda deactivate'
     abbr --add py 'python'
 
-    abbr --add gita  --set-cursor 'git add -A && git commit -m "%"'
-    abbr --add gitap --set-cursor 'git add -A && git commit -m "%" && git push'    
+  # abbr --add gita  --set-cursor 'git add -A && git commit -m "%"'
+    abbr --add gita --set-cursor 'git add -A && git commit -m "%" && git push'    
     
     ### FOLDERS  ###
     abbr --add cdo 'cd /mnt/C/Users/Oskar'

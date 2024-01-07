@@ -2,13 +2,14 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 # ~/.config/starship.toml
 format = """
-[  ](bg:#a3aed2 fg:#090c0c)\
+[ ](bg:#a3aed2 fg:#090c0c)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0)\
 $git_branch\
 $git_status\
 $time\
+$cmd_duration\
 \n$character"""
 
 [directory]
