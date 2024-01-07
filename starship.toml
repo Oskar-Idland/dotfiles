@@ -1,0 +1,40 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+# ~/.config/starship.toml
+format = """
+[  ](bg:#a3aed2 fg:#090c0c)\
+[](bg:#769ff0 fg:#a3aed2)\
+$directory\
+[](fg:#769ff0)\
+$git_branch\
+$git_status\
+$time\
+\n$character"""
+
+[directory]
+style = "fg:#e3e5e5 bg:#769ff0"
+format = "[ $path ]($style)"
+truncate_to_repo = false
+truncation_length = 10
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = "·"
+style = "bg:#394260"
+format = '[[ $symbol $branch ](fg:#98FB98)]($style)'
+
+[git_status]
+style = "bg:#394260"
+format = '[[($all_status$ahead_behind )](fg:#769ff0)]($style)'
+
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[[  $time ](fg:#a0a9cb)]($style)'
