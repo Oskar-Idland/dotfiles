@@ -1,0 +1,1 @@
+/home/oskar/.config/fish/config.fish
