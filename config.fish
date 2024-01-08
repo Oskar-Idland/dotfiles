@@ -8,7 +8,13 @@ if status is-interactive
     ### CLI UTILS ###
     abbr --add ls lsd
     abbr --add la 'lsd -a'
-
+    
+    #                    No trailing whitespace
+    #                              v 
+    abbr --add diff 'colordiff -y -Z -W 70 --suppress-common-lines'
+    #                           ^     ^
+    #                Side by side     Width of 70 chars
+                                
     abbr --add icat 'kitten icat'
 
     abbr --add mc micro
