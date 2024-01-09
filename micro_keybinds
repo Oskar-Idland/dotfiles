@@ -1,6 +1,11 @@
 {
     "Alt-/": "lua:comment.comment",
-    "CtrlUnderscore": "lua:comment.comment",
-    "Alt-z": "command:set wordwrap off,command:set softwrap off",
     "Alt-Z": "command:set wordwrap on,command:set softwrap on",
+    "Alt-d": "command:definition",
+    "Alt-f": "command:format",
+    "Alt-k": "command:hover",
+    "Alt-r": "command:references",
+    "Alt-z": "command:set wordwrap off,command:set softwrap off",
+    "CtrlSpace": "command:lspcompletion",
+    "CtrlUnderscore": "lua:comment.comment"
 }

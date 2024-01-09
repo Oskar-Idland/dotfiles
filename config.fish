@@ -28,6 +28,7 @@ if status is-interactive
     abbr --add gita --set-cursor 'git add -A && git commit -m "%" && git push'    
     
     ### FOLDERS  ###
+    abbr --add cdc --set-cursor 'cd ~/.config/%'
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
 
