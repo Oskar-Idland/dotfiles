@@ -1,5 +1,10 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+
+    ### FISH ###
+    set fish_cursor_default block
+
+    
     ### PACMAN ###
     abbr --add srh 'pacman -Ss'
     abbr --add qry 'pacman -Qs'
