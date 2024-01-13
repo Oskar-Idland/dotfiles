@@ -1,8 +1,10 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    starship init fish | source
     ### FISH ###
     set fish_cursor_default block
+    set fish_cursor_visual block
 
     
     ### PACMAN ###
@@ -43,7 +45,6 @@ if status is-interactive
     source /usr/share/LS_COLORS/dircolors.csh
 
     ## starship
-    starship init fish | source
     
 
 end
