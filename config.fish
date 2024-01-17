@@ -42,6 +42,7 @@ if status is-interactive
     abbr --add cds 'cd ~/repos/scripts'
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
+    abbr --add 'cd.' 'cd ../..'
     
     ### PLUGINS  ###
     # LS_COLORS
