@@ -13,6 +13,7 @@ if status is-interactive
     abbr --add srh 'pacman -Ss'
     abbr --add qry 'pacman -Qs'
     abbr --add inst 'sudo pacman -S'
+    abbr --add checkall 'checkupdates ; yay -Qua'
 
     ### CLI UTILS ###
     abbr --add ls lsd
@@ -43,6 +44,9 @@ if status is-interactive
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
     abbr --add 'cd.' 'cd ../..'
+    abbr --add 'cdklas' 'cd ~/repos/courses/FYS3120-KlasMek'
+    abbr --add 'cdmat' 'cd ~/repos/courses/FYS3130-MatMet'
+    abbr --add 'cdpart' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
     
     ### PLUGINS  ###
     # LS_COLORS
