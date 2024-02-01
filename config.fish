@@ -26,6 +26,7 @@ if status is-interactive
     #                Side by side     Width of 70 chars
                                 
     abbr --add icat 'kitten icat'
+    abbr --add kitty-fonts 'kitty +list-fonts'
 
     abbr --add mc micro
     abbr --add mcr 'micro -readonly on'
