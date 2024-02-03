@@ -13,7 +13,6 @@ if status is-interactive
     abbr --add srh 'pacman -Ss'
     abbr --add qry 'pacman -Qs'
     abbr --add inst 'sudo pacman -S'
-    abbr --add updates 'checkupdates ; yay -Qua'
 
     ### CLI UTILS ###
     abbr --add ls lsd
