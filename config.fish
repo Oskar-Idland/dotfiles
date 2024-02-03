@@ -45,7 +45,7 @@ if status is-interactive
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
     abbr --add 'cd.' 'cd ../..'
     abbr --add 'cdklas' 'cd ~/repos/courses/FYS3120-KlasMek'
-    abbr --add 'cdmat' 'cd ~/repos/courses/FYS3130-MatMet'
+    abbr --add 'cdmat' 'cd ~/repos/courses/FYS3140-MatMet'
     abbr --add 'cdpart' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
     
     ### PLUGINS  ###
