@@ -23,13 +23,16 @@ if status is-interactive
     abbr --add diff 'colordiff -y -Z -W 70 --suppress-common-lines'
     #                           ^     ^
     #                Side by side     Width of 70 chars
-                                
+
+    ### KITTY  ###                  
     abbr --add icat 'kitten icat'
     abbr --add kitty-fonts 'kitty +list-fonts'
 
+    ### EDITOR  ###
     abbr --add mc micro
     abbr --add mcr 'micro -readonly on'
-    
+
+    ### PYTHON  ###
     abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
     abbr --add cndd 'conda deactivate ; conda deactivate'
     abbr --add py 'python'
@@ -43,9 +46,12 @@ if status is-interactive
     abbr --add cds 'cd ~/repos/scripts'
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
-    abbr --add 'cd.' 'cd ../..'
+    abbr --add '.'  'cd ..'
+    abbr --add '..' 'cd ../..'
+    abbr --add '.3' 'cd ../../..'
+    abbr --add '.4' 'cd ../../../'
     abbr --add 'cdklas' 'cd ~/repos/courses/FYS3120-KlasMek'
-    abbr --add 'cdmat' 'cd ~/repos/courses/FYS3140-MatMet'
+    abbr --add 'cdmat'  'cd ~/repos/courses/FYS3140-MatMet'
     abbr --add 'cdpart' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
     
     ### PLUGINS  ###
