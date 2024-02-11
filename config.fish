@@ -33,10 +33,13 @@ if status is-interactive
     abbr --add mcr 'micro -readonly on'
 
     ### PYTHON  ###
-    abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
-    abbr --add cndd 'conda deactivate ; conda deactivate'
+#   abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
+#   abbr --add cndd 'conda deactivate ; conda deactivate'
+    abbr --add cnda 'conda activate myenv'
+    abbr --add cndd 'conda deactivate'
     abbr --add py 'python'
 
+    ### GIT  ###
   # abbr --add gita  --set-cursor 'git add -A && git commit -m "%"'
     abbr --add gita --set-cursor 'git add -A && git commit -m "%" && git push'    
     
@@ -53,6 +56,9 @@ if status is-interactive
     abbr --add 'cdklas' 'cd ~/repos/courses/FYS3120-KlasMek'
     abbr --add 'cdmat'  'cd ~/repos/courses/FYS3140-MatMet'
     abbr --add 'cdpart' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
+
+    ### SOFTWARE ###
+    alias menk='microsoft-edge-stable repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
     
     ### PLUGINS  ###
     # LS_COLORS
