@@ -53,9 +53,9 @@ if status is-interactive
     abbr --add '..' 'cd ../..'
     abbr --add '.3' 'cd ../../..'
     abbr --add '.4' 'cd ../../../'
-    abbr --add 'cdklas' 'cd ~/repos/courses/FYS3120-KlasMek'
-    abbr --add 'cdmat'  'cd ~/repos/courses/FYS3140-MatMet'
-    abbr --add 'cdpart' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
+    abbr --add 'cdk' 'cd ~/repos/courses/FYS3120-KlasMek'
+    abbr --add 'cdm'  'cd ~/repos/courses/FYS3140-MatMet'
+    abbr --add 'cdp' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
 
     ### SOFTWARE ###
     alias menk='microsoft-edge-stable repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
@@ -73,13 +73,13 @@ end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /home/oskar/anaconda3/bin/conda
-    eval /home/oskar/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+if test -f /opt/miniconda3/bin/conda
+    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 else
-    if test -f "/home/oskar/anaconda3/etc/fish/conf.d/conda.fish"
-        . "/home/oskar/anaconda3/etc/fish/conf.d/conda.fish"
+    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
     else
-        set -x PATH "/home/oskar/anaconda3/bin" $PATH
+        set -x PATH "/opt/miniconda3/bin" $PATH
     end
 end
 # <<< conda initialize <<<
