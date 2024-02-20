@@ -17,6 +17,7 @@ if status is-interactive
     ### CLI UTILS ###
     abbr --add ls lsd
     abbr --add la 'lsd -a'
+    abbr --add ll 'lsd -l'
     
     #                    No trailing whitespace
     #                              v 
