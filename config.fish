@@ -59,7 +59,7 @@ if status is-interactive
     abbr --add 'cdp' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
 
     ### SOFTWARE ###
-    alias menk='microsoft-edge-stable repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
+    alias menk='microsoft-edge-stable --force-device-scale-factor=2.0 repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
     
     ### PLUGINS  ###
     # LS_COLORS
@@ -67,7 +67,7 @@ if status is-interactive
     source /usr/share/LS_COLORS/dircolors.csh
 
     ### OTHER ###
-    alias fresh='clear ; fish_greeting'
+    alias fresh='reload-fish ; clear ; fish_greeting'
     
 
 end
