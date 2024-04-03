@@ -56,7 +56,7 @@ if status is-interactive
     abbr --add '.4' 'cd ../../../'
     abbr --add 'cdk' 'cd ~/repos/courses/FYS3120-KlasMek'
     abbr --add 'cdm'  'cd ~/repos/courses/FYS3140-MatMet'
-    abbr --add 'cdp' 'cd ~/repos/courses/FYS3500-ParticlePhysics'
+    abbr --add 'cdp' --set-cursor 'cd ~/repos/courses/FYS3500-ParticlePhysics/%'
 
     ### SOFTWARE ###
     alias menk='microsoft-edge-stable --force-device-scale-factor=2.0 repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
