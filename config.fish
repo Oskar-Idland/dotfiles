@@ -59,7 +59,7 @@ if status is-interactive
     abbr --add 'cdp' --set-cursor 'cd ~/repos/courses/FYS3500-ParticlePhysics/%'
 
     ### SOFTWARE ###
-    alias menk='microsoft-edge-stable --force-device-scale-factor=2.0 repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
+    alias menk='microsoft-edge-stable --force-device-scale-factor=2.0 ~/repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
     
     ### PLUGINS  ###
     # LS_COLORS
