@@ -10,9 +10,10 @@ if status is-interactive
 
     
     ### PACMAN ###
-    abbr --add srh 'pacman -Ss'
-    abbr --add qry 'pacman -Qs'
+    abbr --add srh  'pacman -Ss'
+    abbr --add qry  'pacman -Qs'
     abbr --add inst 'sudo pacman -S'
+    abbr --add pcm  'sudo pacman -Syu'
 
     ### CLI UTILS ###
     abbr --add ls lsd
