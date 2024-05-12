@@ -11,6 +11,7 @@ $git_status\
 $time\
 $cmd_duration\
 \n$character"""
+command_timeout = 1000
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
