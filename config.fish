@@ -5,8 +5,8 @@ if status is-interactive
     starship init fish | source
     
     ### FISH ###
-    set fish_cursor_default block
-    set fish_cursor_visual block
+    #set fish_cursor_default block
+    #set fish_cursor_visual block
 
     
     ### PACMAN ###
@@ -14,7 +14,7 @@ if status is-interactive
     abbr --add qry  'pacman -Qs'
     abbr --add inst 'sudo pacman -S'
     abbr --add pcm  'sudo pacman -Syu'
-
+    abbr --add sort-packages 'pacman -Qi | grep -E "^(Name|Installed)" | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | less'
     ### CLI UTILS ###
     abbr --add ls lsd
     abbr --add la 'lsd -a'
@@ -37,7 +37,7 @@ if status is-interactive
     ### PYTHON  ###
 #   abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
 #   abbr --add cndd 'conda deactivate ; conda deactivate'
-    abbr --add cnda 'conda activate myenv'
+    abbr --add cnda 'eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source ; conda activate myenv'
     abbr --add cndd 'conda deactivate'
     abbr --add py 'python'
 
@@ -51,18 +51,14 @@ if status is-interactive
     abbr --add cds 'cd ~/repos/scripts'
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
-    abbr --add '.'  'cd ..'
+    abbr --add '.'  'cd ../'
     #abbr --add '..' 'cd ../..'
     #abbr --add '.3' 'cd ../../..'
     #abbr --add '.4' 'cd ../../../'
     function multicd
-        echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+        echo cd (string repeat -n (string length -- $argv[1]) ../)
     end
     abbr --add dotdot --regex '^\.\.+$' --function multicd
-
-    abbr --add 'cdk' 'cd ~/repos/courses/FYS3120-KlasMek'
-    abbr --add 'cdm'  'cd ~/repos/courses/FYS3140-MatMet'
-    abbr --add 'cdp' --set-cursor 'cd ~/repos/courses/FYS3500-ParticlePhysics/%'
 
     ### SOFTWARE ###
     alias menk='microsoft-edge-stable --force-device-scale-factor=2.0 ~/repos/Knowlegde-Vault/D\&D/Menk_character_sheet.pdf > /dev/null 2>&1 & disown ; exit'
@@ -81,6 +77,7 @@ if status is-interactive
     
     ### OTHER ###
     alias fresh='reload-fish ; clear ; fish_greeting'
+    
 
     
 
@@ -88,13 +85,13 @@ end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /opt/miniconda3/bin/conda
-    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/opt/miniconda3/bin" $PATH
-    end
-end
+#if test -f /opt/miniconda3/bin/conda
+#    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+#else
+#    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+#        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+#    else
+#        set -x PATH "/opt/miniconda3/bin" $PATH
+#    end
+#end
 # <<< conda initialize <<<

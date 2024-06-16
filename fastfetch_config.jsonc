@@ -1,0 +1,97 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 1
+        }
+    },
+    "display": {
+        "separator": "",
+        "keyWidth": 15,
+        "bar": {
+                    "charElapsed": "=",
+                    "charTotal": "-",
+                    "width": 13
+        },
+     "percent": {
+         "type": 6
+        }
+    },
+    "modules": [
+        {
+            "key": "╭───────────╮",
+            "type": "custom"
+        },
+        {
+            // draw borders first to make colors of left and right border consistant
+            "key": "│           │\u001b[11D{#31} user",
+            "type": "title"
+        },
+        {
+            "key": "│           │\u001b[11D{#33}󰅐 uptime",
+            "type": "uptime"
+        },
+        {
+            "key": "│           │\u001b[11D{#34}󰟾 distro",
+            "type": "os",
+            "format": "{2}"
+        },
+        {
+            "key": "│           │\u001b[11D{#35} kernel",
+            "type": "kernel",
+            "format": "{2}"
+        },
+        {
+            "key": "│           │\u001b[11D{#36} DE/WM",
+            "type": "wm"
+        },
+        {
+            "key": "│           │\u001b[11D{#31} term",
+            "type": "terminal"
+        },
+        {
+            "key": "│           │\u001b[11D{#32} shell",
+            "type": "shell"
+        },
+        //{
+        //    "key": "│           │\u001b[11D{#33}󰍛 cpu",
+        //    "type": "cpu",
+        //    "showPeCoreCount": true,
+        //    "format": "{1}"
+        //},
+        {
+            "key": "│           │\u001b[11D{#34}󰉉 disk",
+            "type": "disk",
+            "folders": "/"
+       
+        },
+        {
+            "key": "│           │\u001b[11D{#35}  memory",
+            "type": "memory"
+        },
+        
+        {
+           "key": "│           │\u001b[11D{#32} battery",
+           "type": "battery"
+        },
+       // {
+       //     "key": "│           │\u001b[11D{#36}󰩟 network",
+       //     "type": "localip",
+       //     "format": "{1} ({4})"
+       // },
+        {
+            "key": "├───────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "│           │\u001b[11D{#39} colors",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "key": "╰───────────╯",
+            "type": "custom"
+        }
+    ]
+}
