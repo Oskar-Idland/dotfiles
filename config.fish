@@ -1,6 +1,12 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    ### KOBE ###
+    abbr --add ssh-a 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@camphor.kudpc.kyoto-u.ac.jp'
+    abbr --add ssh-b 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@laurel.kudpc.kyoto-u.ac.jp'
+    abbr --add ssh-c 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@cinnamon.kudpc.kyoto-u.ac.jp'
+    abbr --add ssh-g 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@gardenia.kudpc.kyoto-u.ac.jp'
+
     ### STARSHIP ###
     starship init fish | source
     
@@ -25,6 +31,11 @@ if status is-interactive
     abbr --add diff 'colordiff -y -Z -W 70 --suppress-common-lines'
     #                           ^     ^
     #                Side by side     Width of 70 chars
+
+    abbr --add ffa 'fastfetch -c all.jsonc | grep -i '
+    abbr --add ffi 'fastfetch -c examples/10.jsonc'
+    abbr --add ffb 'fastfetch -c examples/9.jsonc'
+    abbr --add ff7 'fastfetch -c examples/7.jsonc'
 
     ### KITTY  ###                  
     abbr --add icat 'kitten icat'
