@@ -62,6 +62,8 @@ if status is-interactive
     abbr --add cds 'cd ~/repos/scripts'
     abbr --add cdo 'cd /mnt/C/Users/Oskar'
     abbr --add osk --position anywhere /mnt/C/Users/Oskar
+    abbr --add cdm --set-cursor 'cd ~/repos/courses/%'
+    
     abbr --add '.'  'cd ../'
     #abbr --add '..' 'cd ../..'
     #abbr --add '.3' 'cd ../../..'
