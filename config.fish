@@ -25,6 +25,8 @@ if status is-interactive
     abbr --add ls lsd
     abbr --add la 'lsd -a'
     abbr --add ll 'lsd -l'
+
+    abbr --add fzc 'fzf | wl-copy -n' 
     
     #                    No trailing whitespace
     #                              v 
@@ -48,7 +50,7 @@ if status is-interactive
     ### PYTHON  ###
 #   abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
 #   abbr --add cndd 'conda deactivate ; conda deactivate'
-    abbr --add cnda 'eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source ; conda activate myenv'
+    abbr --add cnda 'conda activate myenv'
     abbr --add cndd 'conda deactivate'
     abbr --add py 'python'
 
@@ -98,13 +100,13 @@ end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-#if test -f /opt/miniconda3/bin/conda
-#    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+#if test -f /home/oskar/miniconda3/bin/conda
+#    eval /home/oskar/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 #else
-#    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
-#        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+#    if test -f "/home/oskar/miniconda3/etc/fish/conf.d/conda.fish"
+        source "/home/oskar/miniconda3/etc/fish/conf.d/conda.fish"
 #    else
-#        set -x PATH "/opt/miniconda3/bin" $PATH
+#        set -x PATH "/home/oskar/miniconda3/bin" $PATH
 #    end
 #end
 # <<< conda initialize <<<

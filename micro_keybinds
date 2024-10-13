@@ -6,6 +6,7 @@
     "Alt-k": "command:hover",
     "Alt-r": "command:references",
     "Alt-z": "command:set wordwrap off,command:set softwrap off",
+    "CtrlP": "command:palettero",
     "CtrlSpace": "command:lspcompletion",
     "CtrlUnderscore": "lua:comment.comment"
 }
