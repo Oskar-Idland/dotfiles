@@ -27,6 +27,10 @@ if status is-interactive
     abbr --add ll 'lsd -l'
 
     abbr --add fzc 'fzf | wl-copy -n' 
+
+    abbr --add lg lazygit
+
+    abbr --add mkdir "mkdir -p"
     
     #                    No trailing whitespace
     #                              v 
