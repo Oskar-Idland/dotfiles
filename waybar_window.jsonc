@@ -15,6 +15,6 @@
             "(.*?)-\\s*YouTube(.*)": "$1󰗃", 
             "(.*?\\s)YouTube(.*)": "$1YouTube 󰗃"
         },
-        "max-length": 34
+        "max-length": 50
     },
 

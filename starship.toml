@@ -13,6 +13,8 @@ $cmd_duration\
 \n$character"""
 command_timeout = 1000
 
+right_format = """$python"""
+
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
 format = "[ $path ]($style)"
@@ -42,3 +44,7 @@ format = '[[($all_status$ahead_behind )](fg:#769ff0)]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 format = '[[  $time ](fg:#a0a9cb)]($style)'
+
+[python]
+format = '([(\($virtualenv\) )]($style))'
+style = "bold green"

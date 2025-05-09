@@ -54,9 +54,12 @@ if status is-interactive
     ### PYTHON  ###
 #   abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
 #   abbr --add cndd 'conda deactivate ; conda deactivate'
-    abbr --add cnda 'conda activate myenv'
-    abbr --add cndd 'conda deactivate'
-    abbr --add py 'python'
+    abbr --add cnda  'conda activate myenv'
+    abbr --add cndai 'conda activate IN4050'
+    abbr --add cndaq 'conda activate FYS5419'
+    abbr --add cndal 'conda activate ./venv'
+    abbr --add cndd  'conda deactivate'
+    abbr --add py    'python'
 
     ### GIT  ###
   # abbr --add gita  --set-cursor 'git add -A && git commit -m "%"'
