@@ -12,8 +12,10 @@
         			"width": 15
         },
         "bar": {
-                    "charElapsed": "=",
-                    "charTotal": "-",
+                    "char": {
+                    	"elapsed": "=",
+                    	"total": "-",
+                    },
                     "width": 13
         },
      "percent": {
