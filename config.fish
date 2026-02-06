@@ -9,6 +9,9 @@ if status is-interactive
     abbr --add ssh-c 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@cinnamon.kudpc.kyoto-u.ac.jp'
     abbr --add ssh-g 'ssh -i ~/.ssh/lan_kyoto_hpc b38535@gardenia.kudpc.kyoto-u.ac.jp'
 
+    ### SIGMA ###
+    abbr --add ssh-s 'kitty +kitten ssh oskarei@saga.sigma2.no'
+
     ### STARSHIP ###
     starship init fish | source
 
@@ -57,6 +60,8 @@ if status is-interactive
     abbr --add mc micro
     abbr --add mcr 'micro -readonly on'
     abbr --add mcf 'micro (fzf)'
+    abbr --add coded  'code . & disown'
+    abbr --add codede 'code . & disown & exit'
 
     ### PYTHON  ###
 #   abbr --add cnda 'conda init fish &> /dev/null ; source ~/.config/fish/config.fish ; conda activate myenv'
